@@ -11,10 +11,38 @@
                     <h1>Submit Teaching and Learning Data</h1>
                     <form action="/teaching-data" method="POST">
                     {{ csrf_field() }}
-                    Reading Perecentile by Grade Level 1-8:
+                    Reading Percentile 1st Grade:
+                    <input type="number" name="reading_percentile_1"  min="0" max="100" step="0.01"><br>
+                    Reading Percentile 2nd Grade:
+                    <input type="number" name="reading_percentile_2"  min="0" max="100" step="0.01"><br>
+                    Reading Percentile 3rd Grade:
+                    <input type="number" name="reading_percentile_3"  min="0" max="100" step="0.01"><br>    
+                    Reading Percentile 4th Grade:
+                    <input type="number" name="reading_percentile_4"  min="0" max="100" step="0.01"><br>    
+                    Reading Percentile 5th Grade:
+                    <input type="number" name="reading_percentile_5"  min="0" max="100" step="0.01"><br>    
+                    Reading Percentile 6th Grade:
+                    <input type="number" name="reading_percentile_6"  min="0" max="100" step="0.01"><br>    
+                    Reading Percentile 7th Grade:
+                    <input type="number" name="reading_percentile_7"  min="0" max="100" step="0.01"><br>    
+                    Reading Percentile 8th Grade:
                     <input type="number" name="reading_percentile_8"  min="0" max="100" step="0.01"><br>
-                    Math Percentile by Grade Levels 1-8:
-                    <input type="number" name="math_percentile_8"  min="0" max="100" step="0.01"><br>
+                    Math Percentile 1st Grade:    
+                    <input type="number" name="math_percentile_1"  min="0" max="100" step="0.01"><br>
+                    Math Percentile 2nd Grade:
+                    <input type="number" name="math_percentile_2"  min="0" max="100" step="0.01"><br>
+                    Math Percentile 3rd Grade:
+                    <input type="number" name="math_percentile_3"  min="0" max="100" step="0.01"><br>    
+                    Math Percentile 4th Grade:
+                    <input type="number" name="math_percentile_4"  min="0" max="100" step="0.01"><br>    
+                    Math Percentile 5th Grade:
+                    <input type="number" name="math_percentile_5"  min="0" max="100" step="0.01"><br>    
+                    Math Percentile 6th Grade:
+                    <input type="number" name="math_percentile_6"  min="0" max="100" step="0.01"><br>    
+                    Math Percentile 7th Grade:
+                    <input type="number" name="math_percentile_7"  min="0" max="100" step="0.01"><br>    
+                    Math Percentile 8th Grade:
+                    <input type="number" name="math_percentile_8"  min="0" max="100" step="0.01"><br>    
                     ACT Composite By Ending School Year:
                     <input type="number" name="ACT_composite"  min="0" max="36" step="0.01"><br>
                     Percent of Students Ready for College Level English:
