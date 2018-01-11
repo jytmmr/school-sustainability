@@ -12,8 +12,12 @@ class TeachingData extends Model
      * @var array
      */
     protected $fillable = [
-        'id', 'created_at', 'reading_percentile_8', 'math_percentile_8', 'ACT_composite',
-        'percent_students_college_english_ready', 'percent_students_college_math_ready',
+        'id', 'created_at',
+        'reading_percentile_1','reading_percentile_2','reading_percentile_3', 'reading_percentile_4',
+        'reading_percentile_5','reading_percentile_6','reading_percentile_7', 'reading_percentile_8',
+        'math_percentile_1','math_percentile_2','math_percentile_3','math_percentile_4',
+        'math_percentile_5','math_percentile_6','math_percentile_7','math_percentile_8',
+        'ACT_composite', 'percent_students_college_english_ready', 'percent_students_college_math_ready',
         'percent_students_college_reading_ready', 'percent_students_college_science_ready',
         'percent_students_all_ACT_benchmarks_met', 'ACT_writing_subtest_composite', 'percent_student_ACT_proj_met',
         'biblically_integrated_curric', 'curric_review_cycle_interval', 'num_teacher_planning_periods',
