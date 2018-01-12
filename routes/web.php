@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/data-category', 'DataCategoryController@view');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'UserController@showProfile');//->name('profile');
