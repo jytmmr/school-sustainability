@@ -17,7 +17,9 @@ class CreateCategoryFieldsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('unique_field_name');
+            $table->integer('data_category_id')->unsigned();
             $table->foreign('data_category_id')->references('id')->on('data_categories');
+            $table->integer('author_id')->unsigned();
             $table->foreign('author_id')->references('id')->on('users');
             //these are fields that dictate input type and the benchmark that it is to be checked against
             $table->string('data_type');

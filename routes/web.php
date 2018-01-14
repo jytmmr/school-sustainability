@@ -20,7 +20,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/data-category', 'DataCategoryController@view');
+Route::get('/data-category', 'DataCategoryController@createView');
+
+Route::post('/api/data-category', 'DataCategoryController@create');
+
+Route::get('/data-category/{id}', 'DataCategoryController@editView');
+
+Route::get('/test/{id}', 'DataCategoryController@test');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -33,10 +40,6 @@ Route::get('/test', 'TeachingDataController@index');
 Route::get('/teaching-data-review', 'TeachingDataController@viewDataReview');
 
 
-// Route::get('/getWebUsers', function(Request $request) {
-//     return User::all();
-//
-// });
 
 Route::get('/getWebUsers', 'TeachingDataController@getAllTeachingData');
 
